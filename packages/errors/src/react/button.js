@@ -13,9 +13,11 @@ const styles = {
         ':hover': buttonCss['.psds-button:hover'],
         ':focus': buttonCss['.psds-button:focus'],
         ':focus:before': buttonCss['.psds-button:focus:before'],
-        ':focus:after': buttonCss['.psds-button:focus:after']
+        ':focus:after': buttonCss['.psds-button:focus:after'],
+        display: 'inline-flex',
+        alignItems: 'center'
       }
     )
 }
 
-export default props => <button {...styles.button(props)} {...props} />
+export default props => <a {...styles.button(props)} {...props} />
